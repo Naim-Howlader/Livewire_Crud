@@ -18,6 +18,7 @@ class CreateTodo extends Component
         session()->flash('success','Todo Created Successfully');
         $this->dispatch('todo-created');
     }
+
     public function render()
     {
         return view('livewire.todo.create-todo');
